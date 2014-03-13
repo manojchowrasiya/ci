@@ -1,0 +1,73 @@
+CREATE TABLE IF NOT EXISTS `selection` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `createddate` datetime NOT NULL,
+  `profileid` int(11) NOT NULL,
+  `sectorid` int(11) NOT NULL,
+
+
+  `location` varchar(100) NOT NULL,
+  `interduration` varchar(1000) NOT NULL,
+  `interstart` datetime NOT NULL,
+
+  `graduationperc` int(11) NOT NULL,
+  `valuegraduation` int(11) NOT NULL,
+
+  `workexp` int(11) NOT NULL,
+
+  `cvbasedshortlisting` int(11) NOT NULL,
+  `extraactivity` int(11) NOT NULL,
+
+  `rounds` int(11) NOT NULL,
+    `round1` varchar(1000) NOT NULL,
+
+  `round2` varchar(1000) NOT NULL,
+  `round3` varchar(1000) NOT NULL,
+  `round4` varchar(1000) NOT NULL,
+  `round5` varchar(1000) NOT NULL,
+  `round6` varchar(1000) NOT NULL,
+  `round7` varchar(1000) NOT NULL,
+  `personality_traits` varchar(2000) NOT NULL,
+
+  `type_group_activity` varchar(2000) NOT NULL,
+
+  `gd_topic` varchar(2000) NOT NULL,
+  `group_size` varchar(2000) NOT NULL,
+
+  `gd_duration` varchar(2000) NOT NULL,
+
+  `suggestion` text NOT NULL,
+
+  `round1name` varchar(2000) NOT NULL,
+  `round2name` varchar(2000) NOT NULL,
+  `round3name` varchar(2000) NOT NULL,
+  `round4name` varchar(2000) NOT NULL,
+  `round5name` varchar(2000) NOT NULL,
+  `round6name` varchar(2000) NOT NULL,
+  `round7name` varchar(2000) NOT NULL,
+  `duration_round1` varchar(2000) NOT NULL,
+  `duration_round2` varchar(2000) NOT NULL,
+  `duration_round3` varchar(2000) NOT NULL,
+  `duration_round4` varchar(2000) NOT NULL,
+  `duration_round5` varchar(2000) NOT NULL,
+  `duration_round6` varchar(2000) NOT NULL,
+  `duration_round7` varchar(2000) NOT NULL,
+  `round1_exp` text NOT NULL,
+  `round2_exp` text NOT NULL,
+  `round3_exp` text NOT NULL,
+  `round4_exp` text NOT NULL,
+  `round5_exp` text NOT NULL,
+  `round6_exp` text NOT NULL,
+  `round7_exp` text NOT NULL,
+  
+  `employer1` varchar(1000) NOT NULL,
+  `emp1_exp` int(11) NOT NULL,
+  `employer2` varchar(1000) NOT NULL,
+  `emp2_exp` int(11) NOT NULL,
+  `social_profile_id` varchar(256) NOT NULL,
+  `grad_college` varchar(1000) NOT NULL,
+  `grad_branch` varchar(1000) NOT NULL,
+  `post_grad_college` varchar(1000) NOT NULL,
+  `post_grad_cource` varchar(1000) NOT NULL,
+  `interview_suggestion` text NOT NULL,
+  PRIMARY KEY (`id`)
+)

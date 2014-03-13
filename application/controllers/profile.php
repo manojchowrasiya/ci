@@ -20,11 +20,39 @@ class Profile extends CI_Controller {
 	public function index()
 	{
 		// echo 'manoj';
-		echo 'manoj';
-		$this->load->model('profile_model');
-		$data['profile_msg']=$this->profile_model->getMsg();
+		// echo 'manojhhhhhddd';//exit;
+		// $this->load->model('profile_model');
+		// $data['msg']=$this->profile_model->getMsg();
 		// print_r($data);exit;
-		$this->load->view('profile_content',$data);
+		$this->load->view('form_content');
+	}
+	public function selection()
+	{
+		// echo 'manoj';
+		// echo 'manojhhhhhddd';//exit;
+		// $this->load->model('profile_model');
+		// $data['msg']=$this->profile_model->getMsg();
+		// print_r($data);exit;
+		// echo '<pre>';
+		$data =array();
+		$something = $this->input->post();
+		foreach ($something as $index=>$value) {
+			// print_r($index);
+			// echo '------------';
+			if(is_array($value)){
+				$value=implode(',', $value);
+			}
+			$data[$index]=$value;
+
+			// print_r($value);echo '<br/>';
+
+
+		}
+		// print_r($data);
+		// exit;
+			// print_r($something = $this->input->post());exit;
+		$this->db->insert('selection', $data); 
+		$this->load->view('form_content');
 	}
 }
 
