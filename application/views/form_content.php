@@ -492,7 +492,7 @@
   <label class="control-label" for="grad_branch">Graduation Branch:</label>
   <div class="controls">
     <input id="grad_branch" name="grad_branch" type="text" placeholder="placeholder" class="input-xlarge">
-    <p class="help-block">help</p>
+    <p class="help-block">helppppp</p>
   </div>
 </div>
 
